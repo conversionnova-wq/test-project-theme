@@ -1,8 +1,8 @@
 {
     "name": "Header group",
     "type": "header",
-    "settings":{
-        "Announcement": {
+    "sections":{
+        "announcement": {
             "type": "announcementbar",
             "settings": {}
             },
@@ -12,7 +12,7 @@
             }
     },
     "order": [
-        "Announcement",
+        "announcement",
         "header"
     ]
 }
