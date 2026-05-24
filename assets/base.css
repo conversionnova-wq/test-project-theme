@@ -1,7 +1,8 @@
 html{
     margin: 0;
 }
-.announcement-bar h1{
+.announcementbar h1{
+    width: 100%;
     background-color: rgb(174, 198, 202);
     padding: 10px;
     text-align: center; 
