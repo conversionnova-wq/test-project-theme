@@ -1,9 +1,18 @@
 <div class="image-banner-{{section.id}}">
-    <h1>Image Banner sdfdjfhdjftested</h1>
+   <div class="image-banner-main">
+    <img src="{{ section.settings.image | image_url: width: 1440px }}" alt="Image Banner">
+   </div>
 </div>
-{% schema  %} 
+
+{% schema %}
 {
     "name": "Image Banner",
-    "settings": []
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ]
 }
 {% endschema %}
