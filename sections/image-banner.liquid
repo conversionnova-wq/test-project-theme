@@ -1,6 +1,10 @@
 <div class="image-banner-{{section.id}}">
    <div class="image-banner-main">
+    {% if section.settings.image != blank %}
     <img src="{{ section.settings.image | image_url: width: 1440px }}" alt="Image Banner">
+    {% else %}
+        {{ 'hero-apparel-1' |  placeholder_svg_tag: 'placeholder_svg' }}
+    {% endif %}
    </div>
 </div>
 {% schema  %} 
@@ -13,6 +17,5 @@
             "label": "Image"
         }
     ]
-    
 }
 {% endschema %}
