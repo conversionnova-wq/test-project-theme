@@ -40,7 +40,36 @@
       {
         "type": "link_list",
         "id": "menu",
-        "label": "Menu"
+        "label": "Menu",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Link title"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Link URL"
+          },
+          {
+            "type": "link_list",
+            "id": "links",
+            "label": "Child links",
+            "settings": [
+              {
+                "type": "text",
+                "id": "title",
+                "label": "Link title"
+              },
+              {
+                "type": "url",
+                "id": "url",
+                "label": "Link URL"
+              }
+            ]
+          }
+        ]
       }
     ]
 }
