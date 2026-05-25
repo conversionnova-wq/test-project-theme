@@ -1,21 +1,11 @@
 <div class="image-banner-{{section.id}}">
    <div class="image-banner-main">
-    {% if section.settings.image != blank %}
-    <img src="{{ section.settings.image | image_url: width: 1440px }}" alt="Image Banner">
-    {% else %}
-        {{ 'hero-apparel-1' |  placeholder_svg_tag: 'placeholder_svg' }}
-    {% endif %}
-   </div>
+   <h1 class="image-banner-heading">Image Banner</h1>
+   <p class="image-banner-description">This is an image banner section. You can add an image, heading, and description to create a visually appealing banner for your store.</p>
 </div>
 {% schema  %} 
 {
     "name": "Image Banner",
-    "settings": [
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        }
-    ]
+    "settings": []
 }
 {% endschema %}
